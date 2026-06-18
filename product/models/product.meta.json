@@ -1,0 +1,14 @@
+{
+  "componentName": "Product",
+  "type": "Model",
+  "responsibilities": [
+    "Define a estrutura do modelo de dados de produto para o banco de dados",
+    "Armazena campos como title, description, price e active para representação de produtos"
+  ],
+  "dependencies": [],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

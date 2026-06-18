@@ -1,0 +1,15 @@
+{
+  "componentName": "CategorySerializer",
+  "type": "Utility",
+  "responsibilities": [
+    "Serializa o modelo Category para representação JSON nas APIs REST"
+  ],
+  "dependencies": [
+    "product/models/category.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}
