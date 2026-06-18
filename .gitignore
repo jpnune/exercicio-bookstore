@@ -1,0 +1,7 @@
+*.pyc
+__pycache__/
+db.sqlite3
+.venv/
+.poetry/
+.pytest_cache/
+*.log
