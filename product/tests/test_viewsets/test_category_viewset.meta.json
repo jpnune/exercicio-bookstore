@@ -1,11 +1,11 @@
 {
-  "componentName": "CategorySerializer",
+  "componentName": "CategoryViewSetTests",
   "type": "Utility",
   "responsibilities": [
-    "Serializa o modelo Category para representação JSON nas APIs REST"
+    "Testa as rotas da viewset de categoria (CategoryViewSet), incluindo a listagem e a criação de categorias"
   ],
   "dependencies": [
-    "product/models/category.py"
+    "product/tests/test_viewsets/test_category_viewset.py"
   ],
   "securityConstraints": {
     "requiresAuth": false,

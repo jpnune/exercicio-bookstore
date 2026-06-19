@@ -1,2 +1,2 @@
 # pyrefly: ignore [missing-import]
-from .order_serializers import OrderSerializer
+from .order_serializer import OrderSerializer

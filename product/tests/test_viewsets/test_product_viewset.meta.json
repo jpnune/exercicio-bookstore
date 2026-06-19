@@ -1,0 +1,17 @@
+{
+  "componentName": "TestProductViewSet",
+  "type": "Utility",
+  "responsibilities": [
+    "Testa as rotas de viewset de produto (ProductViewSet), garantindo o correto retorno da listagem e criação de produtos"
+  ],
+  "dependencies": [
+    "product/tests/test_viewsets/test_product_viewset.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": [
+    "product/tests/test_viewsets/test_product_viewset.py"
+  ]
+}

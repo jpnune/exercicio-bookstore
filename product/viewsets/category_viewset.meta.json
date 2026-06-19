@@ -1,11 +1,12 @@
 {
-  "componentName": "CategorySerializer",
+  "componentName": "CategoryViewSet",
   "type": "Utility",
   "responsibilities": [
-    "Serializa o modelo Category para representação JSON nas APIs REST"
+    "Expõe a API de CRUD para a model Category através do Django REST Framework"
   ],
   "dependencies": [
-    "product/models/category.py"
+    "product/models/category.py",
+    "product/serializers/category_serializer.py"
   ],
   "securityConstraints": {
     "requiresAuth": false,

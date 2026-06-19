@@ -1,0 +1,16 @@
+{
+  "componentName": "OrderViewSet",
+  "type": "Utility",
+  "responsibilities": [
+    "Expõe a API RESTful de CRUD para pedidos usando Django REST Framework"
+  ],
+  "dependencies": [
+    "order/models/order.py",
+    "order/serializers/order_serializer.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": true,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}
