@@ -62,6 +62,24 @@ poetry run python manage.py test
 
 ---
 
+## 🔒 Autenticação
+
+A rota de pedidos (`OrderViewSet`) requer autenticação. As rotas de produtos e categorias são abertas ao público.
+
+### Gerando um Token para um Usuário
+Para gerar ou obter o token de um usuário via terminal, execute:
+```bash
+poetry run python manage.py drf_create_token <username>
+```
+
+### Como Autenticar Requisições (Postman / Insomnia)
+Nas requisições para rotas protegidas (como `/bookstore/v1/order/`), adicione no cabeçalho (**Headers**):
+
+* **Key:** `Authorization`
+* **Value:** `Token <seu_token_gerado>`
+
+---
+
 ## 📊 Estrutura de Testes Criada
 
 Abaixo está o mapeamento dos novos arquivos de testes unitários integrados ao projeto:

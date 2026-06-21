@@ -12,5 +12,7 @@
     "requiresAuth": true,
     "ipcSignals": []
   },
-  "testSpecs": []
+  "testSpecs": [
+    "order/test/test_viewsets/test_order_viewsets.py"
+  ]
 }
