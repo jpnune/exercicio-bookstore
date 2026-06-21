@@ -30,3 +30,5 @@ class ProductFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = Product
+        skip_postgeneration_save = True
+

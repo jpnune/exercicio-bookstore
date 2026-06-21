@@ -1,0 +1,16 @@
+{
+  "componentName": "test_product_serializer",
+  "type": "Test",
+  "responsibilities": [
+    "Validar a serialização, validação e salvamento customizado do ProductSerializer"
+  ],
+  "dependencies": [
+    "product/serializers/product_serializer.py",
+    "product/factories.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

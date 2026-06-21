@@ -1,0 +1,16 @@
+{
+  "componentName": "test_category_model",
+  "type": "Test",
+  "responsibilities": [
+    "Validar a criação e os atributos do modelo Category"
+  ],
+  "dependencies": [
+    "product/models/category.py",
+    "product/factories.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}
