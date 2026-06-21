@@ -1,0 +1,15 @@
+{
+  "componentName": "ProductUrls",
+  "type": "Utility",
+  "responsibilities": [
+    "Define as rotas de URL para a API de produtos usando o roteador REST Framework"
+  ],
+  "dependencies": [
+    "product/viewsets/product_viewset.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

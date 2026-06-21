@@ -1,0 +1,17 @@
+{
+  "componentName": "OrderSerializer",
+  "type": "Utility",
+  "responsibilities": [
+    "Serializa objetos do modelo Order para JSON e vice-versa",
+    "Calcula dinamicamente o total do pedido somando os preços dos produtos relacionados"
+  ],
+  "dependencies": [
+    "product/serializers/product_serializer.py",
+    "order/models/order.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

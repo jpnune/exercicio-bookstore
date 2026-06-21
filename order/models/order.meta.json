@@ -1,0 +1,16 @@
+{
+  "componentName": "Order",
+  "type": "Model",
+  "responsibilities": [
+    "Define a estrutura do modelo de dados de pedidos no sistema",
+    "Associa múltiplos produtos a um usuário específico"
+  ],
+  "dependencies": [
+    "product/models/product.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": true,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

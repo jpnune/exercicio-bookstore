@@ -1,0 +1,14 @@
+{
+  "componentName": "Category",
+  "type": "Model",
+  "responsibilities": [
+    "Define a estrutura do modelo de dados de categorias para os produtos",
+    "Gerencia campos como title, slug, description e active"
+  ],
+  "dependencies": [],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

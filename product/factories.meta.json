@@ -1,0 +1,16 @@
+{
+  "componentName": "ProductFactories",
+  "type": "Utility",
+  "responsibilities": [
+    "Define fábricas CategoryFactory e ProductFactory utilizando a biblioteca Factory Boy para testes automatizados"
+  ],
+  "dependencies": [
+    "product/models/product.py",
+    "product/models/category.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

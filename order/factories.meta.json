@@ -1,0 +1,16 @@
+{
+  "componentName": "OrderFactories",
+  "type": "Utility",
+  "responsibilities": [
+    "Define fábricas UserFactory e OrderFactory para geração de dados de teste automatizados"
+  ],
+  "dependencies": [
+    "product/factories.py",
+    "order/models/order.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

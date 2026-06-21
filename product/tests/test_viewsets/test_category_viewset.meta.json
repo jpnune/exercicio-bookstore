@@ -1,0 +1,17 @@
+{
+  "componentName": "CategoryViewSetTests",
+  "type": "Utility",
+  "responsibilities": [
+    "Testa as rotas da viewset de categoria (CategoryViewSet), incluindo a listagem e a criação de categorias"
+  ],
+  "dependencies": [
+    "product/tests/test_viewsets/test_category_viewset.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": [
+    "product/tests/test_viewsets/test_category_viewset.py"
+  ]
+}
