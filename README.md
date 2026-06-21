@@ -49,10 +49,8 @@ A API estará disponível em `http://127.0.0.1:8000/`.
 
 ## 🧪 Como Executar os Testes
 
-A suíte de testes foi atualizada e está livre de alertas ou erros de compatibilidade com o Python 3.12+.
-
 ### Rodar Todos os Testes com o Pytest
-Para rodar a suíte completa de testes (15 testes cobrindo viewsets, modelos e serializers):
+Para rodar a suíte completa de testes:
 ```bash
 poetry run pytest
 ```
