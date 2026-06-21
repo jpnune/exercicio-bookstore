@@ -13,6 +13,7 @@ class TestProductViewSet(APITestCase):
 
     def setUp(self):
         self.user = UserFactory()
+        self.client.force_authenticate(user=self.user)
 
         self.product = ProductFactory(
             title='pro controller',
