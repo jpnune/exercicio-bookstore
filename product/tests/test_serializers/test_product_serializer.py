@@ -1,7 +1,8 @@
 import pytest
-from product.factories import CategoryFactory, ProductFactory
+from product.factories import CategoryFactory
 from product.serializers.product_serializer import ProductSerializer
 from product.models import Product
+
 
 @pytest.mark.django_db
 def test_product_serializer_valid():
@@ -11,7 +12,7 @@ def test_product_serializer_valid():
         "description": "Learn Django fast",
         "price": 50,
         "active": True,
-        "categories_id": [category.id]
+        "categories_id": [category.id],
     }
     serializer = ProductSerializer(data=serializer_data)
     assert serializer.is_valid() is True
@@ -21,6 +22,7 @@ def test_product_serializer_valid():
     assert serializer.validated_data["active"] is True
     assert category in serializer.validated_data["categories_id"]
 
+
 @pytest.mark.django_db
 def test_product_serializer_create():
     category = CategoryFactory(title="Books")
@@ -29,12 +31,12 @@ def test_product_serializer_create():
         "description": "Learn Django fast",
         "price": 50,
         "active": True,
-        "categories_id": [category.id]
+        "categories_id": [category.id],
     }
     serializer = ProductSerializer(data=serializer_data)
     assert serializer.is_valid() is True
     product = serializer.save()
-    
+
     assert isinstance(product, Product)
     assert product.title == "Django Book"
     assert product.description == "Learn Django fast"

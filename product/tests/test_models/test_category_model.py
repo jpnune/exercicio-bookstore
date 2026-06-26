@@ -1,6 +1,6 @@
 import pytest
 from product.factories import CategoryFactory
-from product.models import Category
+
 
 @pytest.mark.django_db
 def test_create_category():
@@ -8,7 +8,7 @@ def test_create_category():
         title="Books",
         slug="books",
         description="Book category description",
-        active=True
+        active=True,
     )
     assert category.title == "Books"
     assert category.slug == "books"

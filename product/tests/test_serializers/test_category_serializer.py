@@ -1,13 +1,14 @@
 import pytest
 from product.serializers.category_serializer import CategorySerializer
 
+
 @pytest.mark.django_db
 def test_category_serializer_valid():
     serializer_data = {
         "title": "Electronics",
         "slug": "electronics",
         "description": "Electronic items",
-        "active": True
+        "active": True,
     }
     serializer = CategorySerializer(data=serializer_data)
     assert serializer.is_valid() is True
@@ -16,11 +17,10 @@ def test_category_serializer_valid():
     assert serializer.validated_data["description"] == "Electronic items"
     assert serializer.validated_data["active"] is True
 
+
 @pytest.mark.django_db
 def test_category_serializer_invalid_missing_title():
-    serializer_data = {
-        "slug": "electronics"
-    }
+    serializer_data = {"slug": "electronics"}
     serializer = CategorySerializer(data=serializer_data)
     assert serializer.is_valid() is False
     assert "title" in serializer.errors
