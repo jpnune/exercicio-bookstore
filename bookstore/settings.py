@@ -28,7 +28,7 @@ DEBUG = int(os.environ.get("DEBUG", default=0))
 
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
 allowed_hosts = os.environ.get("DJANGO_ALLOWED_HOSTS")
-ALLOWED_HOSTS = allowed_hosts.split(" ") if allowed_hosts else ["localhost", "127.0.0.1", ".pythonanywhere.com"]
+ALLOWED_HOSTS = allowed_hosts.split(" ") if allowed_hosts else ["localhost", "127.0.0.1", ".pythonanywhere.com", ".onrender.com"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
