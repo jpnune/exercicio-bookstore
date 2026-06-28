@@ -36,3 +36,14 @@ jobs:
       - name: Test
         run: |
           poetry run python manage.py test
+
+  deploy:
+    name: Deploy to Render
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Trigger Render Deploy Webhook
+        run: |
+          curl -f "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+

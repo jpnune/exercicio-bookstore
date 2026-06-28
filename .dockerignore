@@ -1,0 +1,33 @@
+# Git
+.git
+.github
+.gitignore
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments and Virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# Databases
+*.sqlite3
+
+# Caches and IDEs
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# Poetry
+.poetry/
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
