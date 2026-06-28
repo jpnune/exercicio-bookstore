@@ -1,0 +1,15 @@
+{
+  "componentName": "test_category_serializer",
+  "type": "Test",
+  "responsibilities": [
+    "Validar a serialização e validações do CategorySerializer"
+  ],
+  "dependencies": [
+    "product/serializers/category_serializer.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

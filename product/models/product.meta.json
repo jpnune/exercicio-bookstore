@@ -11,6 +11,7 @@
     "ipcSignals": []
   },
   "testSpecs": [
-    "product/tests/test_viewsets/test_product_viewset.py"
+    "product/tests/test_viewsets/test_product_viewset.py",
+    "product/tests/test_models/test_product_model.py"
   ]
 }

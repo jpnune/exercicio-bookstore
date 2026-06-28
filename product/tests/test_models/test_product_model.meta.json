@@ -1,0 +1,16 @@
+{
+  "componentName": "test_product_model",
+  "type": "Test",
+  "responsibilities": [
+    "Validar a criação, atributos e relacionamentos do modelo Product"
+  ],
+  "dependencies": [
+    "product/models/product.py",
+    "product/factories.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

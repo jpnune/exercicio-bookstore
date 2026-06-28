@@ -1,0 +1,18 @@
+{
+  "componentName": "ProductViewSet",
+  "type": "Utility",
+  "responsibilities": [
+    "Expõe a API de CRUD para a model Product através do Django REST Framework"
+  ],
+  "dependencies": [
+    "product/models/product.py",
+    "product/serializers/product_serializer.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": [
+    "product/tests/test_viewsets/test_product_viewset.py"
+  ]
+}

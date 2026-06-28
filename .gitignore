@@ -1,7 +1,62 @@
-*.pyc
+# Python caches and compiled files
 __pycache__/
-db.sqlite3
+*.py[cod]
+*$py.class
+*.so
+
+# Environments and Virtualenvs
 .venv/
+venv/
+ENV/
+env/
+ENV/
+
+# Dependency manager caches
 .poetry/
 .pytest_cache/
+.mypy_cache/
+
+# Databases
+db.sqlite3
+db.sqlite3-journal
+
+# Local/Development environment variables
+.env
+.env.dev
+env.dev
+.env.*
+!.env.example
+
+# Logs
 *.log
+pip-log.txt
+cherrypy.log
+
+# Build and distribution files
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

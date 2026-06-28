@@ -1,0 +1,16 @@
+{
+  "componentName": "test_order_model",
+  "type": "Test",
+  "responsibilities": [
+    "Validar a criação e os relacionamentos do modelo Order"
+  ],
+  "dependencies": [
+    "order/models/order.py",
+    "order/factories.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

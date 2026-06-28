@@ -10,5 +10,7 @@
     "requiresAuth": false,
     "ipcSignals": []
   },
-  "testSpecs": []
+  "testSpecs": [
+    "product/tests/test_models/test_category_model.py"
+  ]
 }

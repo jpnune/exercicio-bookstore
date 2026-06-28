@@ -1,0 +1,16 @@
+{
+  "componentName": "test_order_serializer",
+  "type": "Test",
+  "responsibilities": [
+    "Validar a serialização, validação e salvamento customizado do OrderSerializer"
+  ],
+  "dependencies": [
+    "order/serializers/order_serializer.py",
+    "order/factories.py"
+  ],
+  "securityConstraints": {
+    "requiresAuth": false,
+    "ipcSignals": []
+  },
+  "testSpecs": []
+}

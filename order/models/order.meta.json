@@ -12,5 +12,7 @@
     "requiresAuth": true,
     "ipcSignals": []
   },
-  "testSpecs": []
+  "testSpecs": [
+    "order/test/test_models/test_order_model.py"
+  ]
 }
