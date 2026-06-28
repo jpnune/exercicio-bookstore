@@ -1,19 +1,23 @@
-name: Python application
+name: Deploy to Render
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
 
 jobs:
-  build:
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.12, 3.13]
+        python-version: [3.12]
         poetry-version: [2.1.4]
 
-    runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
@@ -26,24 +30,20 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install poetry==${{ matrix.poetry-version }}
 
-      - name: View poetry --help
-        run: poetry --help
-
       - name: Install dependencies
-        shell: bash
-        run: python -m poetry install --no-root
+        run: |
+          poetry lock
+          poetry install --no-root
 
-      - name: Test
+      - name: Run Tests
         run: |
           poetry run python manage.py test
 
-  deploy:
-    name: Deploy to Render
-    needs: build
+  render-deploy:
+    name: Trigger Render Deploy
+    needs: build-and-test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: Trigger Render Deploy Webhook
         run: |
           curl -f "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
-
