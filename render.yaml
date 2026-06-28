@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: exercicio-bookstore
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DEBUG
+        value: "0"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SQL_ENGINE
+        value: django.db.backends.postgresql
+      - key: SQL_DATABASE
+        fromDatabase:
+          name: bookstore-db
+          property: database
+      - key: SQL_USER
+        fromDatabase:
+          name: bookstore-db
+          property: user
+      - key: SQL_PASSWORD
+        fromDatabase:
+          name: bookstore-db
+          property: password
+      - key: SQL_HOST
+        fromDatabase:
+          name: bookstore-db
+          property: host
+      - key: SQL_PORT
+        fromDatabase:
+          name: bookstore-db
+          property: port
+
+databases:
+  - name: bookstore-db
+    plan: free
