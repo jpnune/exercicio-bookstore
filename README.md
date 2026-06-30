@@ -73,3 +73,15 @@ poetry run python manage.py drf_create_token <username>
 ### Cabeçalho de Autenticação (Headers):
 * **Key:** `Authorization`
 * **Value:** `Token <seu_token_gerado>`
+
+---
+
+## 🚀 Deploy (Render)
+
+Em substituição ao Heroku, este projeto está configurado para deploy automático no **Render**.
+
+### Arquivos de Configuração:
+* **[render.yaml](file:///c:/Users/jpnun/Desktop/ebac/render.yaml):** Define o Web Service Docker e provisiona o banco de dados PostgreSQL.
+* **[Dockerfile](file:///c:/Users/jpnun/Desktop/ebac/Dockerfile):** Constrói a imagem e executa as migrações/arquivos estáticos antes de rodar o Gunicorn.
+* **[.github/workflows/build.yml](file:///c:/Users/jpnun/Desktop/ebac/.github/workflows/build.yml):** Workflow de CI/CD que executa os testes antes de disparar o deploy via webhook do Render.
+
